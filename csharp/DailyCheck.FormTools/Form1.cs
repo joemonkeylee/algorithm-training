@@ -1,5 +1,5 @@
 using DailyCheck.FormTools.BasicUtils;
-using DailyCheck.FormTools.LeeK;
+using DailyCheck.FormTools.Questions;
 
 namespace DailyCheck.FormTools
 {
@@ -48,7 +48,7 @@ namespace DailyCheck.FormTools
             int[] num = { 0 };
             int k = 23;
 
-            Q989 q989 = new Q989(num, k);
+            _989 q989 = new _989(num, k);
             var result = q989.Main(q989.num, q989.k);
 
             MessageBox.Show(string.Join("", result));

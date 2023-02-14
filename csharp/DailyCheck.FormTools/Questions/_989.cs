@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DailyCheck.FormTools.LeeK
+namespace DailyCheck.FormTools.Questions
 {
-    public class Q989
+    public class _989
     {
         public int[] num = new int[4];
         public int k = 34;
 
-        public Q989(int[] num, int k)
+        public _989(int[] num, int k)
         {
 
             this.num = num;
