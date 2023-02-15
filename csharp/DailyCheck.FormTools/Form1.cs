@@ -1,5 +1,6 @@
 using DailyCheck.FormTools.BasicUtils;
 using DailyCheck.FormTools.Questions;
+using System;
 
 namespace DailyCheck.FormTools
 {
@@ -12,9 +13,40 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q989();
+            q821();
         }
 
+        private void q821()
+        {
+            //var result = new _821().ShortestToChar("loveleetcode", 'e');
+            var result = new _821().ShortestToChar("aaba", 'b');
+
+            MessageBox.Show(string.Join("", result));
+        }
+
+
+        /// <summary>
+        /// day1.5
+        /// </summary>
+        private void q414()
+        {
+            //int[] num = { 1, 2, 2, 5, 3, 5 };
+            //int[] num = { 1, 2 };
+            ////int[] num = { 1, 2, 2 };
+            //int[] num = { 3, 2, 1 };
+            //int[] num = { 1, 2 };
+            //int[] num = { 2, 2, 3, 1 };
+            int[] num = { 1, 2, -2147483648 };
+            _414 model = new _414();
+            var result = model.ThirdMax(num);
+
+            MessageBox.Show(string.Join("", result));
+        }
+
+
+        /// <summary>
+        /// day1
+        /// </summary>
         private void q989()
         {
             //int[] num = new int[4];
