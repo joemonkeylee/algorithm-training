@@ -31,14 +31,12 @@ namespace DailyCheck.FormTools.Questions
 
     internal class _414
     {
-
         /// <summary>
         /// 5 3 1  4 ->6>3 6>5 替换左边 中间向右 5 4 3
         /// 5 3 1  4 ->4>3 4<5 替换中间 中间向右 5 4 3
         /// 5 3 1  4 ->2<3 2>1 替换右
         public int ThirdMax(int[] nums)
         {
-            //较大值在左
             int[] flags = new int[3] { nums[0], nums[0], nums[0] };
             for (int i = 0; i < nums.Count(); i++)
             {

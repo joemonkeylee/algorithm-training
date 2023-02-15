@@ -30,6 +30,20 @@ namespace DailyCheck.FormTools.Questions
         //s[i] 和 c 均为小写英文字母
         //题目数据保证 c 在 s 中至少出现一次
 
+
+
+        public int[] ShortestToChar(string s, char c)
+        {
+         
+        }
+
+
+        /// <summary>
+        /// my solve
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public int[] ShortestToChar(string s, char c)
         {
             //记录c的位置
