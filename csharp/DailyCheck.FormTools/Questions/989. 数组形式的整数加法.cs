@@ -27,8 +27,6 @@ namespace DailyCheck.FormTools.Questions
     //0 <= num[i] <= 9
     //num 不包含任何前导零，除了零本身
     //1 <= k <= 104
-
-    /// </summary>
     internal class _989
     {
         public int[] num = new int[4];

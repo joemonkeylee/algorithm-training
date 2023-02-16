@@ -32,10 +32,10 @@ namespace DailyCheck.FormTools.Questions
 
 
 
-        public int[] ShortestToChar(string s, char c)
-        {
+        //public int[] ShortestToChar(string s, char c)
+        //{
          
-        }
+        //}
 
 
         /// <summary>
