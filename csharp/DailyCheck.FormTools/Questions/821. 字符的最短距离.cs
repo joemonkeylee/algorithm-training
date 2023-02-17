@@ -32,10 +32,50 @@ namespace DailyCheck.FormTools.Questions
 
 
 
-        //public int[] ShortestToChar(string s, char c)
-        //{
-         
-        //}
+        public int[] ShortestToCharBest(string s, char c)
+        {
+            //int[] res = new int[s.Length];
+            //int index = -s.Length;//左起遍历可能没命中  要取最小 所以距离给n长度使得最大
+            //for (int i = 0; i < s.Length; i++)
+            //{
+            //    if (s[i] == c)
+            //    {
+            //        index = i;
+            //    }
+            //    res[i] = i - index;
+            //}
+            //index = 2 * s.Length;//右起遍历可能没命中  要取最小 所以距离给2n长度使得最大
+            //for (int i = s.Length - 1; i < 0; i--)
+            //{
+            //    if (s[i] == c)
+            //    {
+            //        index = i;
+            //    }
+            //    res[i] = Math.Min(res[i], index - i);
+            //}
+            //return res;
+
+            int[] res = new int[s.Length];
+
+            for (int i = 0, index = -s.Length; i < s.Length; ++i)
+            {
+                if (s[i] == c)
+                {
+                    index = i;
+                }
+                res[i] = i - index;
+            }
+
+            for (int i = s.Length - 1, index = 2 * s.Length; i >= 0; --i)
+            {
+                if (s[i] == c)
+                {
+                    index = i;
+                }
+                res[i] = Math.Min(res[i], index - i);
+            }
+            return res;
+        }
 
 
         /// <summary>
