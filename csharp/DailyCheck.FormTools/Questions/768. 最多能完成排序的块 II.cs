@@ -8,21 +8,20 @@ namespace DailyCheck.FormTools.Questions
 {
     internal class _768
     {
-
-            public int maxChunksToSorted(int[] arr)
+        public int maxChunksToSorted(int[] arr)
+        {
+            Stack<int> stack = new Stack<int>();
+            foreach (int num in arr)
             {
-                List<int> stack = new List<Integer>();
-                for (int num : arr)
+                if (stack.Count > 0 && num < stack.Peek())
                 {
-                    if (!stack.isEmpty() && num < stack.getLast())
-                    {
-                        int head = stack.removeLast();
-                        while (!stack.isEmpty() && num < stack.getLast()) stack.removeLast();
-                        stack.addLast(head);
-                    }
-                    else stack.addLast(num);
+                    int head = stack.Pop();
+                    while (stack.Count > 0 && num < stack.Peek()) stack.Pop();
+                    stack.Push(head);
                 }
-                return stack.size();
+                else stack.Push(num);
             }
+            return stack.Count();
         }
+    }
 }
