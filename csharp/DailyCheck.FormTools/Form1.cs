@@ -13,7 +13,14 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q821();
+            q24();
+        }
+
+
+        private void q24()
+        {
+            var result = new _24().SwapPairs(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4)))));
+            MessageBox.Show(string.Join("", result));
         }
 
         private void q821()
@@ -41,6 +48,7 @@ namespace DailyCheck.FormTools
             var result = model.ThirdMax(num);
 
             MessageBox.Show(string.Join("", result));
+
         }
 
 
