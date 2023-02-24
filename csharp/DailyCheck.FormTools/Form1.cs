@@ -13,7 +13,17 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q24();
+            q160();
+        }
+
+        private void q160()
+        {
+            var ListA = new _160.ListNode(4, new _160.ListNode(1, new _160.ListNode(8, new _160.ListNode(4, new _160.ListNode(5, null)))));
+            var ListB = new _160.ListNode(5, new _160.ListNode(6, new _160.ListNode(1, new _160.ListNode(8, new _160.ListNode(4, new _160.ListNode(5, null))))));
+
+            var result = new _160().GetIntersectionNode(ListA, ListB);
+            MessageBox.Show(string.Join("", result));
+
         }
 
 
@@ -21,6 +31,7 @@ namespace DailyCheck.FormTools
         {
             var result = new _24().SwapPairs(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4)))));
             MessageBox.Show(string.Join("", result));
+
         }
 
         private void q821()
@@ -92,6 +103,11 @@ namespace DailyCheck.FormTools
             var result = q989.Main(q989.num, q989.k);
 
             MessageBox.Show(string.Join("", result));
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
