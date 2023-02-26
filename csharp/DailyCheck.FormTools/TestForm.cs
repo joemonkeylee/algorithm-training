@@ -20,7 +20,7 @@ namespace DailyCheck.FormTools
         {
             List<string> data = new List<string>();
             Assembly assembly = Assembly.GetExecutingAssembly();
-            var types = assembly.GetTypes().Where(item => item.FullName.Contains("CodeTester.questions")).ToList();
+            var types = assembly.GetTypes().Where(item => item.FullName.Contains("DailyCheck.FormTools.questions")).ToList();
             string str = "{0};{1};{2}";
             int index = 1;
             foreach (var type in types)
