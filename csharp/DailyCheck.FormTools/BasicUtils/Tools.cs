@@ -8,6 +8,16 @@ namespace DailyCheck.FormTools.BasicUtils
 {
     public static class Tools
     {
+        public static Models.TreeNode GetList(List<int> ints)
+        {
+            Models.TreeNode result = new Models.TreeNode(0, null, null);
+            for (int i = 0; i < ints.Count(); i++)
+            {
+                result.val = ints[i];
+            }
+            return result;
+        }
+
         /// <summary>
         /// 整数数组转整数
         /// </summary>
