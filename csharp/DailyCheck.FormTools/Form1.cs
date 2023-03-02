@@ -13,7 +13,15 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q160();
+            q297();
+        }
+
+
+        private void q297()
+        {
+            var temp = new _297().deserialize("1,2,3,#,#,4,5");
+            var str = new _297().serialize(temp);
+
         }
 
         private void q160()

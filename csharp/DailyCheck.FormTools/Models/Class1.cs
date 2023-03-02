@@ -22,5 +22,10 @@ namespace DailyCheck.FormTools.Models
             this.left = left;
             this.right = right;
         }
+
+        public TreeNode(int val)
+        {
+            this.val = val;
+        }
     }
 }
