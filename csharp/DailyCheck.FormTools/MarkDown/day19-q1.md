@@ -1,6 +1,6 @@
 ﻿### 思路
 
-dict存num[i] index
+没做出来 mark
 
 ### 代码
 
@@ -29,5 +29,5 @@ dict存num[i] index
 ```
 
 **复杂度分析**
-- 时间复杂度：O(n)
+- 时间复杂度：O(nlogn)
 - 空间复杂度：O(n)
