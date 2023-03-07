@@ -13,9 +13,14 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q297();
+            q3();
         }
 
+        private void q3()
+        {
+            var temp = new _3().LengthOfLongestSubstring("aab");
+            MessageBox.Show(string.Join("", temp));
+        }
 
         private void q297()
         {
