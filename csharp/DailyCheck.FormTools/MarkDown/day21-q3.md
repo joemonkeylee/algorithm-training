@@ -1,30 +1,36 @@
 ﻿### 思路
 
-dict存num[i] index
+循环存长度 过去用dict 现在用了list 变慢了
 
 ### 代码
 
 ```c#
 
-     public int[] TwoSum(int[] nums, int target)
+    public int LengthOfLongestSubstring(string s) {
+        if (s.Length <= 1)
         {
-            Dictionary<int, int> dict = new Dictionary<int, int>();
-            for (int i = 0; i < nums.Length; i++)
-            {
-                if (dict.ContainsKey(target - nums[i]))
-                {
-                    return new int[2] { dict[target - nums[i]], i };
-                }
-                else
-                {
-                    if (!dict.ContainsKey(nums[i]))
-                    {
-                        dict.Add(nums[i], i);
-                    }
-                }
-            }
-            throw new Exception("");
+            return s.Length;
         }
+        var arr = s.ToCharArray();
+        int res = 0;
+        List<char> temp = new List<char>();
+        int current = 0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (!temp.Contains(arr[i]))
+            {
+                temp.Add(arr[i]);
+            }
+            else
+            {
+                res = Math.Max(temp.Count, res);
+                temp.Clear();
+                i = current;
+                current++;
+            }
+        }
+        return Math.Max(temp.Count, res);
+    }
 
 ```
 

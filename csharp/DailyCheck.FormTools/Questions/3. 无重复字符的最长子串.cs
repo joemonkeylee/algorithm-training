@@ -50,8 +50,8 @@ namespace DailyCheck.FormTools.Questions
                 {
                     res = Math.Max(temp.Count, res);
                     temp.Clear();
-                    current++;
                     i = current;
+                    current++;
                 }
             }
             return res;
