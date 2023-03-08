@@ -13,9 +13,21 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q297();
+            q30();
         }
 
+        private void q30()
+        {
+            var words = new string[3] { "123", "345", "456" };
+            var temp = new _30().FindSubstring("aabasdasd", words);
+            MessageBox.Show(string.Join("", temp));
+        }
+
+        private void q3()
+        {
+            var temp = new _3().LengthOfLongestSubstring("aab");
+            MessageBox.Show(string.Join("", temp));
+        }
 
         private void q297()
         {
