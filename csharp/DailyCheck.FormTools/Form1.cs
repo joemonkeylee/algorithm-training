@@ -13,7 +13,16 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q30();
+            q1590();
+        }
+
+        private void q1590()
+        {
+            var words = new int[4] { 3, 1, 4, 2 };
+            // var words = new int[3] { 1,2,3 };
+
+            var temp = new _1590().MinSubarray(words, 6);
+            MessageBox.Show(string.Join("", temp));
         }
 
         private void q30()
