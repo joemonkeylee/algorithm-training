@@ -13,7 +13,17 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q1590();
+            q876();
+        }
+
+        private void q876()
+        {
+            var ListA = new _876.ListNode(1, new _876.ListNode(2, new _876.ListNode(3, new _876.ListNode(4, new _876.ListNode(5, null)))));
+            var ListB = new _876.ListNode(1, new _876.ListNode(2, new _876.ListNode(3, new _876.ListNode(4, new _876.ListNode(5, new _876.ListNode(6, null))))));
+
+            var result = new _876().MiddleNode(ListA);
+            MessageBox.Show(string.Join("", result));
+
         }
 
         private void q1590()
