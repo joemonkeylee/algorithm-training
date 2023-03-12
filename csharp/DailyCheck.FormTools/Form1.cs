@@ -13,7 +13,16 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q876();
+            q35();
+        }
+
+        private void q35()
+        {
+            var nums = new int[4] { 1, 3, 5, 6 };
+            var target = 5;
+
+            var temp = new _35().SearchInsert(nums, target);
+            MessageBox.Show(string.Join("", temp));
         }
 
         private void q876()
