@@ -13,8 +13,18 @@ namespace DailyCheck.FormTools
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            q876();
+            q239();
         }
+
+        private void q239()
+        {
+            var words = new int[3] { 7,4,2 };
+            // var words = new int[3] { 1,2,3 };
+
+            var temp = new _239().MaxSlidingWindow(words, 2);
+            MessageBox.Show(string.Join("", temp));
+        }
+        
 
         private void q876()
         {
